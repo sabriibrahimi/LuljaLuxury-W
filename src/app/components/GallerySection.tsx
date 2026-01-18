@@ -6,16 +6,16 @@ import { VideoModal } from "./VideoModal";
 import { Play } from "lucide-react";
 
 const videos = [
-  "/videos/1.mp4",
-  "/videos/2.mp4",
-  "/videos/3.mp4",
+  `${import.meta.env.BASE_URL}videos/1.mp4`,
+  `${import.meta.env.BASE_URL}videos/2.mp4`,
+  `${import.meta.env.BASE_URL}videos/3.mp4`,
 ];
 
 const images = [
-  "/images/1.jpg",
-  "/images/2.jpg",
-  "/images/3.jpg",
-  "/images/4.jpg",
+  `${import.meta.env.BASE_URL}images/1.jpg`,
+  `${import.meta.env.BASE_URL}images/2.jpg`,
+  `${import.meta.env.BASE_URL}images/3.jpg`,
+  `${import.meta.env.BASE_URL}images/4.jpg`,
 ];
 
 export function GallerySection() {
