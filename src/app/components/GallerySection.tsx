@@ -65,12 +65,28 @@ export function GallerySection() {
                   muted
                   playsInline
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-[#1a1410]/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                  <div className="w-16 h-16 md:w-20 md:h-20 rounded-full bg-[#c9a962]/90 backdrop-blur-sm flex items-center justify-center border-2 border-white/30">
-                    <Play className="w-6 h-6 md:w-8 md:h-8 text-white ml-1" fill="white" />
+                {/* Permanent dark overlay to make play button more visible */}
+                <div className="absolute inset-0 bg-gradient-to-t from-[#1a1410]/40 via-transparent to-[#1a1410]/20" />
+
+                {/* VIDEO badge in top-right corner */}
+                <div className="absolute top-3 right-3 bg-[#c9a962] text-white px-3 py-1 text-xs font-semibold tracking-wider rounded-full shadow-lg">
+                  VIDEO
+                </div>
+
+                {/* Always visible play button with pulse animation */}
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="relative">
+                    {/* Pulsing ring animation */}
+                    <div className="absolute inset-0 w-16 h-16 md:w-20 md:h-20 rounded-full bg-[#c9a962]/30 animate-ping" />
+                    {/* Main play button */}
+                    <div className="relative w-16 h-16 md:w-20 md:h-20 rounded-full bg-[#c9a962]/95 backdrop-blur-sm flex items-center justify-center border-2 border-white/50 shadow-xl transition-all duration-300 group-hover:scale-110 group-hover:bg-[#c9a962]">
+                      <Play className="w-6 h-6 md:w-8 md:h-8 text-white ml-1" fill="white" />
+                    </div>
                   </div>
                 </div>
+
+                {/* Hover overlay for extra emphasis */}
+                <div className="absolute inset-0 bg-gradient-to-t from-[#1a1410]/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
               </div>
             </motion.div>
           ))}
