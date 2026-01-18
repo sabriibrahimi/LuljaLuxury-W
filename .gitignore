@@ -6,6 +6,9 @@ dist/
 build/
 *.local
 
+# GitHub Pages
+.sass-cache/
+
 # IDE
 .idea/
 .vscode/

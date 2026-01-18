@@ -167,7 +167,7 @@ export const translations: Record<Language, Translations> = {
       title: 'Na Vizitoni',
       subtitle: 'Ju ftojmë të përjetoni Lulja Luxury personalisht',
       locationTitle: 'Lokacioni',
-      location: 'Komuna e Lipkovës',
+      location: 'Komuna e Likovës',
       phoneTitle: 'Telefoni',
       phone: '+389 72 735 665',
       emailTitle: 'Email',
