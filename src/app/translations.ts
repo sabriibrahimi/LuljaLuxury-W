@@ -61,7 +61,7 @@ export const translations: Record<Language, Translations> = {
   en: {
     hero: {
       tagline: 'Where Love Becomes Timeless',
-      enterButton: 'Enter Experience',
+      enterButton: 'ENTER',
     },
     welcome: {
       title: 'A Sanctuary for Your Most Precious Moments',
@@ -122,7 +122,7 @@ export const translations: Record<Language, Translations> = {
   sq: {
     hero: {
       tagline: 'Ku Dashuria Bëhet e Përjetëshme',
-      enterButton: 'Hyni në Përvojë',
+      enterButton: 'HYNI',
     },
     welcome: {
       title: 'Një Shtëpi për Momentet Tuaja Më të Çmuara',
