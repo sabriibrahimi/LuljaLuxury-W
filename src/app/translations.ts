@@ -17,22 +17,30 @@ export interface Translations {
       title: string;
       description: string;
       price: string;
+      ingredients?: string;
+      image?: string;
     };
     menu2: {
       title: string;
       option1: { name: string; price: string };
       option2: { name: string; price: string };
+      ingredients?: string;
+      image?: string;
     };
     menu3: {
       title: string;
       description: string;
       courses: string[];
       price: string;
+      ingredients?: string;
+      image?: string;
     };
     menu4: {
       title: string;
       description: string;
       price: string;
+      ingredients?: string;
+      image?: string;
     };
   };
   gallery: {
@@ -75,11 +83,15 @@ export const translations: Record<Language, Translations> = {
         title: 'Menu 1',
         description: 'An intimate dining experience celebrating love through carefully selected seasonal ingredients',
         price: '€20 per person',
+        ingredients: '',
+        image: '',
       },
       menu2: {
         title: 'Menu 2',
         option1: { name: 'Menu 2.1', price: '€24 per person' },
         option2: { name: 'Menu 2.2', price: '€26 per person' },
+        ingredients: '',
+        image: '',
       },
       menu3: {
         title: 'Menu 3',
@@ -91,11 +103,15 @@ export const translations: Record<Language, Translations> = {
           'Dessert: White chocolate sphere with champagne sorbet',
         ],
         price: '€35 per person',
+        ingredients: '',
+        image: '',
       },
       menu4: {
         title: 'Menu Élégance',
         description: 'Our signature tasting menu, crafted exclusively for the most discerning celebrations',
         price: '€35 per person',
+        ingredients: '',
+        image: '',
       },
     },
     gallery: {
@@ -136,11 +152,15 @@ export const translations: Record<Language, Translations> = {
         title: 'Menyja 1',
         description: 'Një përvojë e intimë e drekës që feston dashurinë përmes përbërësve sezonalë të përzgjedhur me kujdes',
         price: '€20 për person',
+        ingredients: '',
+        image: '',
       },
       menu2: {
         title: 'Menyja 2',
         option1: { name: 'Menyja 2.1', price: '€24 për person' },
         option2: { name: 'Menyja 2.2', price: '€26 për person' },
+        ingredients: '',
+        image: '',
       },
       menu3: {
         title: 'Menyja 3',
@@ -152,11 +172,15 @@ export const translations: Record<Language, Translations> = {
           'Ëmbëlsirë: Sferë çokollatë e bardhë me sorbet shampanje',
         ],
         price: '€35 për person',
+        ingredients: '',
+        image: '',
       },
       menu4: {
         title: 'Menyja Élégance',
         description: 'Menyja jonë e shquar e shijimit, e krijuar ekskluzivisht për festimet më të zgjedhura',
         price: '€35 për person',
+        ingredients: '',
+        image: '',
       },
     },
     gallery: {
